@@ -27,8 +27,8 @@ namespace WinUIBasics
             double conversionRate = 1.12;
             double.TryParse(amountTextBox.Text, out double amount);
             double convertedAmount = amount * conversionRate;
-            outputTextBlock.Text = "Converted Amount: " + convertedAmount.ToString("F2") + " EUR";
-
+            string convertedString = convertedAmount.ToString("F2");
+            outputTextBlock.Text = "Converted Amount: " + convertedString + " EUR";
         }
     }
 }
